@@ -1,0 +1,29 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+
+
+cairocffi==1.5.1
+cairosvg==2.7.0
+drawsvg==2.1.1
+imageio==2.27.0
+matplotlib==3.7.1
+numpy==1.23.5
+opencv-python==4.7.0.72
+pandas==1.5.3
+pathtools==0.1.2
+pillow==9.4.0
+PyYAML==6.0
+reportlab==4.0.0
+requests==2.28.1
+rlpycairo==0.2.0
+scikit-image==0.20.0
+scipy==1.10.1
+svg-path==6.3
+svglib==1.5.1
+svgpathtools==1.6.1
+svgwrite==1.4.3
+tqdm==4.65.0
+
+# wandb=0.15.3=pypi_0
+

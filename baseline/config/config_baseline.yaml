@@ -1,0 +1,18 @@
+
+
+
+input_folder: images_resized
+output_folder: ransac
+edge_folder: edges_resized_testr_3
+discard_large_circles: true
+keep_true_indices: true
+iterations: 7
+joint: true
+min_inliers_lines: 300
+min_inliers_circles: 1000
+percentile: 10
+evaluate: true
+max_trials: 1500
+resized: true
+save_plots: true
+max_distance: 3
