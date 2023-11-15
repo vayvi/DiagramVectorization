@@ -1,0 +1,22 @@
+name: letr-ext
+dependencies:
+  - python=3.8
+  - pytorch
+  - torchvision
+  - numpy
+  - scipy
+  - opencv
+  - matplotlib
+  - pytorch-lightning
+  - jupyter
+  - nb_conda_kernels
+  - pip
+  - pip:
+       - docopt
+       - opencv-python
+       - wandb
+       - pycocotools
+       - svgwrite
+       - scikit-image
+       - tqdm
+       - svg.path

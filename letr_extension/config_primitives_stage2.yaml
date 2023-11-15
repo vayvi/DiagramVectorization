@@ -1,0 +1,101 @@
+test: false # true when testing
+data:
+  real_data: false
+  dataset_file: coco
+  coco_path: data/synthetic_processed
+  coco_panoptic_path: null
+  remove_difficult: false
+  eval: false 
+  batch_size: 2
+  mode: primitives
+  relative: false
+  common_queries: true
+
+trainer:
+  num_workers: 8
+  epochs: 200
+  clip_max_norm: 0.1
+  precision: 16
+  seed: 42
+  start_epoch: 0
+  num_gpus: 1
+
+letr: 
+  names: ["shapes"]
+  batch_size: 2
+  num_classes: 2
+  num_queries: 500
+  layer1_num: 3
+  layer2_num: 2
+  benchmark: false 
+  layer1_frozen: true 
+  layer2_frozen: false
+  output_type: prediction 
+  LETRpost: true
+
+  position_encoding: 
+    hidden_dim: 256
+    position_embedding: sine
+
+  backbone:
+    architecture: resnet50
+    dilation: false
+    lr_backbone: 0.00001
+
+  transformer_stage1: 
+    hidden_dim: 256
+    dim_feedforward: 2048
+    dropout: 0.1
+    nheads: 8
+    enc_layers: 6
+    dec_layers: 6 
+    pre_norm: false
+
+  transformer_stage2: 
+    hidden_dim: 256
+    dim_feedforward: 2048
+    dropout: 0.1
+    enc_layers: 6
+    dec_layers: 6
+    nheads: 8
+    pre_norm: false
+
+  criterion:
+    matcher: 
+      set_cost_class: 1
+      set_cost_primitive: 5
+    num_classes: 2 # TODO: inherit from num_classes in letr
+    eos_coef: 0.1
+    circle_coef: 1.0
+    label_loss_params: '{}'
+    label_loss_func: cross_entropy
+    LETRpost: false
+    aux_loss: true
+    dec_layers: 6
+    second_dec_layers: 6
+    set_cost_point: 5
+    dice_loss_coef: 1
+    point_loss_coef: 5
+    line_loss_coef: 5
+    names: ["shapes"]
+
+
+
+  
+  optimizer:
+    lr: 0.0001
+    weight_decay: 0.0001
+    lr_drop: 200
+
+
+wandb:
+  enabled: false
+  project: LETR-extension
+
+checkpoint:
+  append_word: null
+  output_dir: exp/res50_stage2_circles
+  load_optimizer: false 
+  resume: "exp/res50_stage1_circles/checkpoints/model-epoch=00.ckpt"
+  # resume: "local"
+  load_ckpt: false 
