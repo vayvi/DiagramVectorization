@@ -64,21 +64,11 @@ python scripts/generate_predictions.py --config_path config/config_baseline_no_t
 ```
 ### Evaluation
 Groud-truth annotations are automatically resized to the image's height and width.
-If you have ground-truth svgs and would like to evaluate the method, you can add the additional arugment --evaluate to the previous command. 
-<!-- In this case, make sure the image and svg share the same name, we use the -corr suffix for ground-truth and keep files in data/diagrams/svgs. -->
+If you have ground-truth svgs and would like to evaluate the method, you can add the additional argument --evaluate to the previous command. 
 
 Or, you can launch evalutation after generating the predicitons by running: 
 
 ```
 python scritps/evaluate.py  
 ```
-
-
-<!-- for me only -->
-<!-- In order to extract text from the images , go to the testr directory and activate test-testr then launch: 
- ```
- python demo/demo.py --input /home/kallelis/PrimitiveExtraction/PrimitiveExtraction/data/real_diagrams_raw/images_resized --output /home/kallelis/PrimitiveExtraction/PrimitiveExtraction/data/real_diagrams_raw/images_resized_testr --output-mask /home/kallelis/PrimitiveExtraction/PrimitiveExtraction/data/real_diagrams_raw/images_resized_testr_mask --config-file configs/TESTR/TotalText/TESTR_R_50_Polygon.yaml
-```
-  -->
-<!-- TODO: make this a bash script asap  -->
 
