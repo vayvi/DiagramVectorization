@@ -1,5 +1,5 @@
 
-This code is the official implementation for the IAMAHA presentation on [the EIDA project](https://eida.hypotheses.org/). 
+This code is the official implementation for the IAMAHA presentation on [the EIDA project](https://eida.hypotheses.org/). Our project webpage can be found [here](http://imagine.enpc.fr/~kallelis/eida/iamaha/DiagramVectorization.html).
 
 We present two distinct approaches to address the task of vectorizing diagrams: a traditional method that leverages contour extraction and robust estimation techniques, and a modern, learning-based method that builds on the Line Segment Detector Transformer [LETR](https://arxiv.org/abs/2101.01909).
 
