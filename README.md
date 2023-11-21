@@ -7,6 +7,11 @@ We present two distinct approaches to address the task of vectorizing diagrams: 
 ## Abstract 
 The EIDA project explores the historical use of astronomical diagrams across Asia, Africa, and Europe. We aim to develop automatic image analysis tools to analyze and edit these diagrams without human annotation, gaining a refined understanding of their role in shaping and transmitting astronomy. In this paper, we present a method to detects lines and circles in historical diagrams, based on text removal, edge detection and RANSAC. We plan to compare this strong baseline with deep approaches. This work contributes to historical diagram vectorization, enabling novel methods of comparison and clustering, and offering fresh insights into the vast corpus of astronomical diagrams.
 
+## Dataset
+
+Our manually annotated sample dataset of 15 diagrams can be found [here](https://drive.google.com/drive/folders/1V0PEsLhMXmQYkgFlqEIAopCQNxvmOnuz?usp=drive_link). 
+
+
 ## Method
 
 Detailed instructions for each approach can be found in their respective README.md files.
