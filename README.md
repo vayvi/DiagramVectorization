@@ -1,5 +1,5 @@
 
-This code is the official implementation for the IAMAHA presentation on [the EIDA project](https://eida.hypotheses.org/). Our project webpage can be found [here](http://imagine.enpc.fr/~kallelis/eida/iamaha/DiagramVectorization.html).
+This code is the official implementation for the IAMAHA presentation on [the EIDA project](https://eida.hypotheses.org/). Our project webpage can be found [here](https://imagine.enpc.fr/~kallelis/iamaha2023/).
 
 We present two distinct approaches to address the task of vectorizing diagrams: a traditional method that leverages contour extraction and robust estimation techniques, and a modern, learning-based method that builds on the Line Segment Detector Transformer [LETR](https://arxiv.org/abs/2101.01909).
 
@@ -23,7 +23,7 @@ If you find our work useful in your research, please consider citing:
 ```bibtex
 @inproceedings{kalleli2023eida, 
     title={{EIDA: Editing and analysing historical astronomical diagrams with artificial intelligence}}, 
-    author={Kalleli, Syrine and Trigg, Scott and Albouy, Ségolène and Guessner, Samuel and Aubry, Mathieu and Husson, Mathieu}, 
+    author={Kalleli, Syrine and Trigg, Scott and Albouy, Ségolène and Guessner, Samuel and Husson, Mathieu and Aubry, Mathieu}, 
     booktitle={IAMAHA}, 
     year={2023}
 }
