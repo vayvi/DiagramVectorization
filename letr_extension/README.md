@@ -1,4 +1,4 @@
-This repository is an extension of the LETR line segment detector for line segment and circle detection. The official code for LETR, [Line Segment Detection Using Transformers without Edges](https://arxiv.org/abs/2101.01909). [Yifan Xu*](https://yfxu.com/), [Weijian Xu*](https://weijianxu.com/), [David Cheung](https://github.com/sawsa307), and [Zhuowen Tu](https://pages.ucsd.edu/~ztu/), (CVPR2021), can be found [here](https://github.com/mlpc-ucsd/LETR/tree/master). 
+This repository is an extension of the LETR line segment detector for line segment and circle detection. The official code for LETR, [Line Segment Detection Using Transformers without Edges](https://arxiv.org/abs/2101.01909). [Yifan Xu*](https://yfxu.com/), [Weijian Xu*](https://weijianxu.com/), [David Cheung](https://github.com/sawsa307), and [Zhuowen Tu](https://pages.ucsd.edu/~ztu/) (CVPR2021), can be found [here](https://github.com/mlpc-ucsd/LETR/tree/master). 
 
 
 The following repo is a re-implementation of their code with pytorch lightning that supports shapes other than lines.
@@ -14,7 +14,7 @@ conda env create -f environment.yml
 ```
 
 
-## Synthetic Dataset
+## Synthetic dataset
 
 
 This resource is part of the dataset used in [docExtractor](https://github.com/monniert/docExtractor) and in [diagram-extraction](https://github.com/Segolene-Albouy/Diagram-extraction). The code for generating the synthetic data is also heavily based on docExtractor.  
@@ -47,9 +47,6 @@ python synthetic.py
 
 This will generate the synthetic data folder in raw format which requires a preprocessing step for the LETR model.
 
-<details><summary>Click to expand</summary>
-
-</details>
 
 ## Real dataset with SVG annotations
 
